@@ -1,15 +1,20 @@
 import { Link } from "expo-router";
-import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <ImageBackground
-      source={require('@/assets/images/smccnasipit.jpg')} 
+      source={require('@/assets/images/smccnasipit.jpg')}
       style={styles.background}
       resizeMode="cover"
     >
       <View style={styles.container}>
         <View style={styles.topTextContainer}>
+          <Image 
+            source={require('@/assets/images/smcc.png')}
+            style={styles.logo}
+            resizeMode="contain"
+          />
           <Text style={styles.title}>Welcome To My New App</Text>
         </View>
 
@@ -39,18 +44,24 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "rgba(249, 249, 249, 0.5)", 
+    backgroundColor: "rgba(133, 133, 133, 0.5)",
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 20,
   },
   topTextContainer: {
+    alignItems: "center",
     marginBottom: 40,
+  },
+  logo: {
+    width: 130,
+    height: 130,
+    marginBottom: 20,
   },
   title: {
     fontSize: 30,
     fontWeight: "bold",
-    color: "#333",
+    color: "#ffff",
     textAlign: "center",
   },
   loginContainer: {

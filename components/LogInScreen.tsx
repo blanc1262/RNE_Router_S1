@@ -17,7 +17,7 @@ const LoginScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Login to Facebook</Text>
 
       <TextInput
         placeholder="Email"
