@@ -4,14 +4,14 @@ import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from "react
 export default function Index() {
   return (
     <ImageBackground
-      source={require('@/assets/images/smccnasipit.jpg')}
+      source={require('../assets/images/smccnasipit.jpg')}
       style={styles.background}
       resizeMode="cover"
     >
       <View style={styles.container}>
         <View style={styles.topTextContainer}>
           <Image 
-            source={require('@/assets/images/smcc.png')}
+            source={require('../assets/images/smcc.png')}
             style={styles.logo}
             resizeMode="contain"
           />
